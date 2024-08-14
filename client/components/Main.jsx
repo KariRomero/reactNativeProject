@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'expo-router';
 import { View, ActivityIndicator, FlatList, Pressable } from 'react-native';
 import { getLatestGames } from '../lib/metacritic';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AnimatedGameCard } from './GameCard';
-import { Logo } from './Logo';
-import Entypo from '@expo/vector-icons/Entypo';
 import { styled } from 'nativewind';
 
 export function Main() {
@@ -21,15 +18,8 @@ export function Main() {
     }, []);
 
     return (
-        <View style={{ paddingBottom: insets.bottom, paddingTop: insets.top }}>
-            <View className='mb-6 '>
-                <Logo />
-            </View>
-            <Link asChild href='/about'>
-                <PressableStyled className="active:opacity-10">
-                    <Entypo name="info-with-circle" size={36} color="white" />
-                </PressableStyled>
-            </Link>
+        <View className='bg-black'>
+            
             {games.length === 0 ? (
                 <ActivityIndicator />
             ) : (

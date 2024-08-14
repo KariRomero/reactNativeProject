@@ -6,7 +6,7 @@ import { styled } from 'nativewind';
 export default function About() {
     const PressableStyled = styled(Pressable);
     return (
-        <ScrollView className='mt-20'>
+        <ScrollView className='bg-black'>
             <Link asChild href='/'>
                 <PressableStyled className="active:opacity-10">
                     <Entypo name="home" size={36} color="white"/> 
