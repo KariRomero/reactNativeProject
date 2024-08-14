@@ -15,7 +15,7 @@ export function GameCard({ game }) {
                 <View
                     className="flex-row bg-gray-500/10 gap-4 mb-10"
                     key={game.slug}>
-                    <Image source={{ uri: game.image }} className='h-48 w-32' />
+                    <Image source={{ uri: game.image }} style={{width:107, height:147}} />
                     <View className='flex-shrink'>
                         <Text className='text-lg text-white'>{game.title}</Text>
                         <Text className='text-white text-xs'>
