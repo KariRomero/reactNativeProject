@@ -1,5 +1,5 @@
 import { ActivityIndicator, Image, ScrollView, Text, View } from 'react-native';
-import { Link, Stack, useLocalSearchParams } from 'expo-router';
+import { Stack, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { getGameDetails } from '../lib/metacritic';
 import { Score } from '../components/Score';
@@ -42,7 +42,7 @@ export default function Detail() {
                                     source={{ uri: game.img }}
                                     style={{ width: 214, height: 294 }}
                                 />
-                                <Text className='text-white font-medium text-left mb-6 text-base'>
+                                <Text className='text-white font-medium text-left mb-6 text-base px-2'>
                                     {game.description}
                                 </Text>
                             </View>

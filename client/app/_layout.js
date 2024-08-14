@@ -11,14 +11,7 @@ export default function Layout() {
                     headerStyle: { backgroundColor: 'black' },
                     headerTintColor: 'yellow',
                     headerTitle: '',
-                    headerLeft: () => <Logo />,
-                    headerRight: () => (
-                        <Link asChild href='/about'>
-                            <Pressable className="active:opacity-10">
-                                <Entypo name="info-with-circle" size={36} color="white" />
-                            </Pressable>
-                        </Link>
-                    )
+                    headerLeft: () => <Logo />,                    
                 }}
             />
         </View>
